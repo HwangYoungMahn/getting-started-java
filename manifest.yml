@@ -1,0 +1,11 @@
+applications:
+- path: javaCloudantWorkloadSchedulerApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: getting-started-java
+  host: getting-started-java
+  disk_quota: 1024M
+  services:
+  - getting-started-java-cloudantNoSQLDB
+  - getting-started-java-WorkloadScheduler
